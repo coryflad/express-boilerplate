@@ -6,7 +6,9 @@
   "scripts": {
     "test": "mocha --require test/setup",
     "dev": "nodemon src/server",
-    "start": "node src/server"
+    "start": "node src/server",
+    "predeploy": "npm audit",
+    "deploy": "git push heroku master"
   },
   "keywords": [],
   "author": "",
